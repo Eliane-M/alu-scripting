@@ -7,7 +7,7 @@ of a subrredit
 
 
 import json
-import request
+import requests
 import sys
 
 
