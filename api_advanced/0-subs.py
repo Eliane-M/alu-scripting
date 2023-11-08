@@ -15,7 +15,6 @@ def number_of_subscribers(subreddit):
     """
     returns the number of subscribers of a given subrredit
     """
-
     subreddit = sys.argv[1]
     URL = f"https://www.reddit.com/r/{subreddit}/about.json"
 
