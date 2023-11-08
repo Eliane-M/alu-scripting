@@ -7,8 +7,9 @@ of a subrredit
 
 
 import json
-import requests
+import request
 import sys
+
 
 def number_of_subscribers(subreddit):
     """
