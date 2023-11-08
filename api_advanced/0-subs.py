@@ -6,14 +6,14 @@ of a subrredit
 """
 
 
+import json
+import requests
+import sys
+
 def number_of_subscribers(subreddit):
     """
     returns the number of subscribers of a given subrredit
     """
-
-    import json
-    import requests
-    import sys
 
     subreddit = sys.argv[1]
     URL = f"https://www.reddit.com/r/{subreddit}/about.json"
