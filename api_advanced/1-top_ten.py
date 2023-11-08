@@ -6,11 +6,12 @@ for a given subreddit.
 """
 
 
+import json
+import requests
+import sys
+
 def top_ten(subreddit):
     """
     prints 10 hot posts
     """
-
-    import json
-    import requests
-
+    URL = f"https/
