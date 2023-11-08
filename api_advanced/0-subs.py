@@ -8,9 +8,7 @@ of a subrredit
 
 def number_of_subscribers(subreddit):
     """
-    returns the number
-    of subscribers
-    of a given subrredit
+    returns the number of subscribers of a given subrredit
     """
 
     import json
