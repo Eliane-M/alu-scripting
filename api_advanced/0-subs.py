@@ -15,7 +15,7 @@ def number_of_subscribers(subreddit):
     """
     returns the number of subscribers of a given subrredit
     """
-    URL = f"https://www.reddit.com/r/{}/about.json".format(subreddit)
+    URL = "https://www.reddit.com/r/{}/about.json".format(subreddit)
 
     headers = {
             "User-Agent": "0-subs/1.0"
