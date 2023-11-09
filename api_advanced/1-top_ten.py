@@ -10,6 +10,7 @@ import json
 import requests
 import sys
 
+
 def top_ten(subreddit):
     """
     prints 10 hot posts
