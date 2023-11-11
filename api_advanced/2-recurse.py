@@ -39,7 +39,8 @@ def recurse(subreddit, hot_list=None, after=None):
         if after:
             recurse(subreddit, hot_list, after)
 
-    return hot_list
+        else:
+            return hot_list
 
     else:
         return ('None')
