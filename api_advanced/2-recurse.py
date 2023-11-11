@@ -41,5 +41,8 @@ def recurse(subreddit, hot_list=None, after=None):
 
     return hot_list
 
+    else:
+        return None
+
 if __name__ == "__main__":
     pass
