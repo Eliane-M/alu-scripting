@@ -34,16 +34,19 @@ def recurse(subreddit, hot_list=None, after=None):
             if title:
                 hot_list.append(title)
 
-        after = data.get("after")
+                after = data.get("after")
 
-        if after:
-            recurse(subreddit, hot_list, after)
+                if after:
+                    recurse(subreddit, hot_list, after)
 
-        else:
-            return hot_list
+                else:
+                    return hot_list
+
+            else:
+                return ('None')
 
     else:
-        return ('None')
+        return None
 
 if __name__ == "__main__":
     pass
