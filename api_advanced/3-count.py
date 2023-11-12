@@ -18,10 +18,13 @@ def count_words(subreddit, word_list, after=None, results=None):
     if results is None:
         results = {}
 
-    url = f'https://www.reddit.com/r/{subreddit}/hot.json'
+    url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     params = {'limit': 10, 'after': after} if after else {'limit': 10}
+    headers = {
+            "User-Agent": "3-count/1.0"
+    }
 
-    response = requests.get(url, params=params, headers={'User-Agent': 'YOUR_USER_AGENT'})
+    response = requests.get(url, params=params, headers=headers)
 
     if response.status_code != 200:
         print(f"Error: HTTP Status Code {response.status_code}")
